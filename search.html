@@ -34,56 +34,91 @@
                 </select>
             </div>
             <div>
-                <label>Price (from-to):</label>
-                <input type="number" min="0" step="0.01" name="price-first" value="0" required>
-                <input type="number" max="1000" step="0.01" name="price-last" value="1000" required>
+                <fieldset>
+                    <legend>Price range:</legend>
+                    <label>
+                        Minimum:
+                        <input type="number" min="0" step="0.01" name="price-first" value="0" required>
+                    </label>
+                    <label>
+                        Maximum:
+                        <input type="number" max="1000" step="0.01" name="price-last" value="1000" required>
+                    </label>
+                </fieldset>
             </div>
             <div>
-                <label>Length (from-to):</label>
-                <input type="number" min="0" step="0.01" name="feature-57478-first" value="0" required>
-                <input type="number" max="100" step="0.01" name="feature-57478-last" value="100" required>
+                <fieldset>
+                    <legend>Length (m):</legend>
+                    <label>
+                        Minimum:
+                        <input type="number" min="0" step="0.01" name="feature-57478-first" value="0" required>
+                    </label>
+                    <label>
+                        Maximum:
+                        <input type="number" max="100" step="0.01" name="feature-57478-last" value="100" required>
+                    </label>
+                </fieldset>
             </div>
             <div>
                 <input id="in-stock" type="checkbox" value="true" name="vf">
                 <label for="in-stock">In stock</label>
             </div>
             <div>
-                <label><input type="checkbox" value="5" name="rating[]"> 5</label>
-                <label><input type="checkbox" value="4" name="rating[]"> 4</label>
-                <label><input type="checkbox" value="3" name="rating[]"> 3</label>
-                <label><input type="checkbox" value="2" name="rating[]"> 2</label>
-                <label><input type="checkbox" value="1" name="rating[]"> 1</label>
+                <fieldset>
+                    <legend>Rating:</legend>
+                    <label><input type="checkbox" value="5" name="rating[]"> 5</label>
+                    <label><input type="checkbox" value="4" name="rating[]"> 4</label>
+                    <label><input type="checkbox" value="3" name="rating[]"> 3</label>
+                    <label><input type="checkbox" value="2" name="rating[]"> 2</label>
+                    <label><input type="checkbox" value="1" name="rating[]"> 1</label>
+                </fieldset>
             </div>
             <div>
-                <label><input type="checkbox" value="Black" name="feature-45225[]"> Black</label>
-                <label><input type="checkbox" value="Blue" name="feature-45225[]"> Blue</label>
-                <label><input type="checkbox" value="Neon Orange" name="feature-45225[]"> Neon Orange</label>
+                <fieldset>
+                    <legend>Color:</legend>
+                    <label><input type="checkbox" value="Black" name="feature-45225[]"> Black</label>
+                    <label><input type="checkbox" value="Blue" name="feature-45225[]"> Blue</label>
+                    <label><input type="checkbox" value="Neon Orange" name="feature-45225[]"> Neon Orange</label>
+                </fieldset>
             </div>
             <div>
                 <button type="submit">Search</button>
         </form>
         <hr>
+        <h1>Studio Headphones Search</h1>
         <form action="https://www.thomann.de/intl/headphones_studio_headphones.html" method="get">
             <div>
-                <label>Price Range:</label>
-                <input type="number" min="0" step="0.01" max="1000" name="price-first" value="0" required>
-                <input type="number" min="0" step="0.01" max="1000" name="price-last" value="1000" required>
+                <fieldset>
+                    <legend>Price range:</legend>
+                    <label>
+                        Minimum:
+                        <input type="number" min="0" step="0.01" name="price-first" value="0" required>
+                    </label>
+                    <label>
+                        Maximum:
+                        <input type="number" max="1000" step="0.01" name="price-last" value="1000" required>
+                    </label>
+                </fieldset>
             </div>
             <div>
                 <label><input type="checkbox" value="true" name="vf"> In stock</label>
             </div>
             <div>
-                <p>Rating:</p>
-                <label><input type="checkbox" value="5" name="rating[]"> 5</label>
-                <label><input type="checkbox" value="4" name="rating[]"> 4</label>
-                <label><input type="checkbox" value="3" name="rating[]"> 3</label>
-                <label><input type="checkbox" value="2" name="rating[]"> 2</label>
-                <label><input type="checkbox" value="1" name="rating[]"> 1</label>
+                <fieldset>
+                    <legend>Rating:</legend>
+                    <label><input type="checkbox" value="5" name="rating[]"> 5</label>
+                    <label><input type="checkbox" value="4" name="rating[]"> 4</label>
+                    <label><input type="checkbox" value="3" name="rating[]"> 3</label>
+                    <label><input type="checkbox" value="2" name="rating[]"> 2</label>
+                    <label><input type="checkbox" value="1" name="rating[]"> 1</label>
+                </fieldset>
             </div>
             <div>
-                <p>Replacable cable:</p>
-                <label><input type="radio" value="true" name="feature-50863"> Yes</label>
-                <label><input type="radio" value="false" name="feature-50863"> No</label>
+                <fieldset>
+                    <legend>Replacable cable:</legend>
+                    <label><input type="radio" value="true" name="feature-50863"> Yes</label>
+                    <label><input type="radio" value="false" name="feature-50863"> No</label>
+                </fieldset>
             </div>
             <div>
                 <button type="submit">Search</button>
